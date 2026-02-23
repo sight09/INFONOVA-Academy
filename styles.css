@@ -1,0 +1,270 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Added Top Nav Styles */
+.top-nav {
+    background-color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+.header {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.showing {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.course-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.course-level {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.beginner {
+    background-color: #28a745;
+}
+
+.intermediate {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.advanced {
+    background-color: #dc3545;
+}
+
+.course-card h2 {
+    font-size: 1em;
+    margin: 15px 15px 0;
+    color: #ff6600;
+}
+
+.course-card h3 {
+    font-size: 1.2em;
+    margin: 5px 15px;
+}
+
+.course-card p {
+    font-size: 0.9em;
+    margin: 5px 15px;
+    color: #666;
+}
+
+.course-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.rating {
+    color: #ffd700;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 2;
+}
+
+.footer-links, .footer-support {
+    flex: 1;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 30px 15px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-logo, .footer-links, .footer-support {
+        margin-bottom: 20px;
+    }
+
+    .top-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container input {
+        padding: 10px;
+    }
+
+    .course-image {
+        height: 150px;
+    }
+}
+
+/* some css styels for icons */
+.imo {
+    background-image: url(./asset/manimo.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.time {
+    background-image: url(./asset/Icontime.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    size: px;
+}
+
+/* to override the link property for contact,about... */
+.course-link {
+
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+
+}
